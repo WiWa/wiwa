@@ -63,7 +63,7 @@ background-size:8px 8px;
 }
 
 #footer p{
-	margin-top:27px;
+	margin-top:7px;
 	font-size:1.3em;
 	color:white;
 }
@@ -83,28 +83,38 @@ font-family: Arial, Helvetica, sans-serif;
 	margin-left:4%;
 	width:90%;
 	margin-right:5%;
-	word-wrap: break-word;
 }
 
 #divHome{
 	position:relative;
 	top:90px;
-	left:16%;
+	left:200px;
 }
 #divProjects{
 	position:relative;
 	top:5px;
-	left:16%;
-	width:60%;
+	left:200px;
+	width:700px;
 	float:left;
 	color:black;
 }
 
 #divIntro {
 	float:right;
-	width:50%;
+	width:760px;
 	text-shadow: 2px 2.5px 2.5px gray;
 	line-height:30px;
+}
+
+
+#libtn{
+	margin-left:70px;
+}
+
+#lilbl{
+	color:black;
+	position:relative;
+	top:-30px;
 }
 
 #picme{
@@ -117,6 +127,12 @@ font-family: Arial, Helvetica, sans-serif;
 	height:80px;
 	float:left;
 	margin-right:18px
+}
+
+.bicon{
+	width:80px;
+	height:80px;
+
 }
 
 .projectTitle{

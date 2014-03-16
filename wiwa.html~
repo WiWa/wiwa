@@ -1,5 +1,5 @@
 <head>
-  <title>wiwa</title>
+  <title>WiWa</title>
 </head>
 
 <body>
@@ -34,26 +34,29 @@
 </div>
 
 <div id="footer">
-<p> W i W a </p>
+<p>W i W a  </p>
 </div>
 
 </div>
 </template>
 
 <template name="viewHome">
-
+<div id="imgs">
 <img id="picme"src="/wiwa1.jpg"></img>
+<img src="http://image-store.slidesharecdn.com/895c642a-9660-11e3-85bc-22000aa90791-large.png" name="libtn" id="libtn" class="bicon"/><label for="libtn" id="lilbl">LinkedIn</label>
+</div>
 
 <div id="divIntro">
 <div id="introText">
 <p>Hey there, I'm Win</p>
 <p class="bt"> an undergrad CS/Physics major,</p>
 <p class="bt">Software Developer and Gamer.</p>
-<p class="bt">I'll be actively participating in forging our
+<p class="bt">I'll be actively participating in creating our
 <p class="bt">beautiful future</p>
 <p>See you on the way!</p>
 <div>
 </div>
+
 </template>
 
 
