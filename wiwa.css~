@@ -6,25 +6,26 @@ html {
 
 body{
     height: 100%;
-	background-color:#505050;
+	background-color:#efefef;
 	margin:0;
+	word-wrap: break-word;
 }
 #header{
-	background-color:grey;
+	background-color:black;
 	width:100%;
-	height:72px;
+	height:100px;
 	float:left;
 }
 
 #header ul{
 	text-align:center;
-	margin-top:19px;
+	margin-top:30px;
 }
 
 #header li
 {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size:1.6em;
+	font-size:2em;
 	display: inline;
 	list-style-type: none;
 	margin-left: 82px;
@@ -40,33 +41,68 @@ body{
 
 #header li:hover{
 	cursor:pointer;
-	box-shadow: 0 5px 2px -1px rgba(0, 255, 255, 0.5);
+	box-shadow: 0 5px 2px -1px rgba(0, 255, 255, 0.7);
 }
 
 #footer {
 font-family: Arial, Helvetica, sans-serif;
-	background-color:grey;
+	color:black;
 	width:100%;
-	height:52px;
+	height:72px;
 	float:left;
 	text-align:center;
+	position:absolute;
+	top:100%;
+background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 4px 4px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 4px 4.5px;
+background-color:#282828;
+background-size:8px 8px;
+}
+
+#footer p{
+	margin-top:27px;
+	font-size:1.3em;
+	color:white;
 }
 
 #columnMain {
 font-family: Arial, Helvetica, sans-serif;
-	width:64%;
-	height:80%;
+	width:74%;
+	height:895px;
 	position: relative;
 	float:left;
-	margin-left:18%;
-	margin-right:18%;
-	background-color:black;
+	margin-left:13%;
+	margin-right:13%;
+	background-color:#d9d9d9;
 	color:white;
 }
 
 #columnInner{
+	float:left;
 	margin-left:4%;
+	width:90%;
 	margin-right:5%;
+	text-shadow: 2.5px 3px 3px black;
+	word-wrap: break-word;
+}
+
+#divProjects, #divHome{
+	position:relative;
+	top:50px;
+}
+
+#divIntro {
+	float:right;
+	width:55%;
+	line-height:30px;
+}
+
+.bt{
+	color:black;
+	text-shadow: 2.5px 3px 3px white;
 }
 
 .view{

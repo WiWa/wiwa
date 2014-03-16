@@ -4,80 +4,55 @@
 
 <body>
 
-{{> headerT}}
+
 {{> viewMain}}
-{{> footerT}}
 
 </body>
-
-<template name="hello">
-  <h1>Hello World!</h1>
-  {{greeting}}
-  <input type="button" value="Click" />
-</template>
-
-
-<template name="headerT">
-<header id="header">
-<ul>
-  <li id="navHome">Home</li>
-  <li id="navProjects">Projects</li>
-</ul>
-</header>
-</template>
-
-<template name="footerT">
-<footer id="footer">
-<p> WiWa </p>
-</footer>
-</template>
-
 
 <template name="viewMain">
 <div id="columnMain">
 
-<p>Main Column</p>
+<div id="header">
+<ul>
+  <li id="navHome">Home</li>
+  <li id="navProjects">Projects</li>
+</ul>
+</div>
+
 <div id="columnInner">
 
-
 <div id="divHome" class="view" >
-<h1>Home</h1>
+
+{{>viewHome}}
+
 </div>
 
 <div id="divProjects" class="view" >
 <h1>Projects</h1>
 </div>
 
+</div>
 
+<div id="footer">
+<p> WiWa </p>
 </div>
 
 </div>
 </template>
 
-
-<!--
 <template name="viewHome">
+<div id="divIntro">
 
-<h1>Home</h1>
-
+<div id="introText">
+<p>Hey there, I'm Win</p>
+<p class="bt"> an undergrad CS/Physics major,</p>
+<p class="bt">Software Developer and Gamer.</p>
+<p class="bt">I'll be actively participating in forging our
+<p class="bt">beautiful future</p>
+<p>See you on the way!</p>
+<div>
+</div>
 </template>
-
-<template name="viewAbout">
-<h1>About</h1>
-
-</template>
-
-<template name="viewProjects">
-<h1>Projects</h1>
-
-</template>
-
-<template name="viewResume">
-<h1>Resume</h1>
-
-</template>
--->
-
 
 
 
