@@ -1,0 +1,68 @@
+if (Meteor.isClient) {
+
+  var views = ["navHome", "navAbout", "navProjects", "navResume"];
+
+  Template.viewMain.home = function () {
+	return Session.get("view")==0;
+  }
+  Template.viewMain.about = function () {
+	return Session.get("view")==1;
+  }
+  Template.viewMain.projects = function () {
+	return Session.get("view")==2;
+  }
+  Template.viewMain.resume = function () {
+	return Session.get("view")==3;
+  }
+
+  Template.headerT.events({
+    'click #navHome' : function () {
+	Session.set("view", 0);
+	console.log(Session.get("view"))
+    },
+
+    'click #navAbout' : function () {
+	Session.set("view", 1);
+	console.log(Session.get("view"))
+    },
+
+    'click #navProjects' : function () {
+	Session.set("view", 2);
+	console.log(Session.get("view"))
+    },
+
+    'click #navResume' : function () {
+	Session.set("view", 3);
+	console.log(Session.get("view"))
+    },
+
+    'click li' : function () {
+	for(var i = 0; i < views.length; i++){
+
+	  if(Session.get("view") == i){
+	    $("#"+views[i] ).css({
+	    	"box-shadow": "0 5px 2px -1px rgba(0, 255, 255, 0.76)"
+	    });
+	  }
+	  else{
+	    $("#"+views[i] ).css({
+	    	"box-shadow": ""
+	    });
+	  }
+
+	}
+    }
+
+  });
+
+
+  Session.set("view", 0);
+
+
+}
+
+if (Meteor.isServer) {
+  Meteor.startup(function () {
+    // code to run on server at startup
+  });
+}
