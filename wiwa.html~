@@ -28,27 +28,29 @@
 </div>
 
 <div id="divProjects" class="view" >
-<h1>Projects</h1>
+<h1 style="font-size:3em;margin-bottom:-10px">Projects</h1>
 </div>
 
 </div>
 
 <div id="footer">
-<p> WiWa </p>
+<p> W i W a </p>
 </div>
 
 </div>
 </template>
 
 <template name="viewHome">
-<div id="divIntro">
 
+<img id="picme"src="/wiwa1.jpg"></img>
+
+<div id="divIntro">
 <div id="introText">
 <p>Hey there, I'm Win</p>
 <p class="bt"> an undergrad CS/Physics major,</p>
 <p class="bt">Software Developer and Gamer.</p>
 <p class="bt">I'll be actively participating in forging our
-<p class="bt">beautiful future,</p>
+<p class="bt">beautiful future</p>
 <p>See you on the way!</p>
 <div>
 </div>

@@ -9,7 +9,7 @@ if (Meteor.isClient) {
 	$("#divHome").css({"display":"inline"});
 	$(".view[id!=divHome]").hide();
 	//console.log(Session.get("view"))
-	styleHome();
+	
     },
 
     'click #navProjects' : function () {
@@ -58,10 +58,11 @@ if (Meteor.isClient) {
 		Projects = new Meteor.Collection("projects");
 		var pArr = Projects.find().fetch();
 		for (var i = 0; i < pArr.length; i++){
-			var p = "<div><h3>"+pArr[i]['name']+"</h3>"+pArr[i]['description']+"</div>";
+			var p = "<div>"+"<a href='https://github.com/stuycs-softdev-2012-2013/WWEB'><img src='"+pArr[i]['image']+"'class='icon'/></a>"+"<a href='https://github.com/stuycs-softdev-2012-2013/WWEB'><p class='projectTitle'>"+pArr[i]['name']+"</p></a>"+pArr[i]['description']+"</div>";
 			$("#divProjects").append(p);
 		}
 	});
+	styleHome();
   }
 
 }
