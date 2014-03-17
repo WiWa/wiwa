@@ -111,8 +111,11 @@ function normalHome(){
 	$('#divIntro p').animate({"margin-top":"0px"},260,function(){$("#divIntro").animate({"margin-top":"0px","margin-left":"36px"},260);$('#divMore').show(500);});
 	
 	a.text("Win Wang");
-	b.text("CS, Physics");
-	c.text("Software Developer");
+	b.text("Gamer");
+	c.text("Student");
+	d.text("Physicist");
+	e.text("Computer Scientist");
+	f.text("");
 }
 
 

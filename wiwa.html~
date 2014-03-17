@@ -67,7 +67,7 @@
 </div>
 
 <div id="divIntro">
-<p>Hey there, I'm Win</p>
+<p style="text-weight:bold">Hey there, I'm Win</p>
 <p class="bt">I'm an undergrad CS/Physics major,</p>
 <p class="bt">Software Developer <span id="and">and</span> </p>
 <p class="bt">I'll be actively participating in creating our
@@ -76,7 +76,7 @@
 <label id="ablbl">More About Me!</label>
 
 <div id="divMore" style="display:none">
-<p>I'm currently a freshman at Vanderbilt University, but grew up in New York City. During my time at Stuyvesant High School, I participated in FTC Robotics, eventually becoming the leader of team 310 (Stuy Fission), which works closely with its sister team, team 479 (Stuy Fusion). At Vanderbilt, I'm working to create a Splash! chapter, an idea I was first introduced to by MIT Splash, which I attended as a student, then a teacher. I'm looking into research in either 2-D materials (graphene, MoS2) or robotics, while continuing to develop my own projects and my skillset.</p>
+<p>I'm currently a freshman at Vanderbilt University, but grew up in New York City. During my time at Stuyvesant High School, I participated in FTC Robotics, eventually becoming the leader of team 310 (Stuy Fission), which works closely with its sister team, team 479 (Stuy Fusion). At Vanderbilt, I'm working to create a Splash! chapter, an idea I was first introduced to by MIT Splash, which I attended as a student, then a teacher. I'm looking into research in either 2-D materials (graphene, MoS2) or robotics, while developing my own projects and my skillset.</p>
 </div>
 
 </div>

@@ -80,7 +80,6 @@ function styleHome(){
 	var d = $($('#divIntro p')[3]);
 	var e = $($('#divIntro p')[4]);
 	var f = $($('#divIntro p')[5]);
-	$("#and").css({"position":"relative", "top":"0px"}, 700)
 	
 	$('#divIntro p').css({"margin-top":"40px"});
 	$('#divIntro').animate({"margin-top":"30px"},600,function(){
@@ -107,7 +106,6 @@ function normalHome(){
 	e.animate({"font-size":"1.1em", "margin-bottom":"0px", "margin-left":"0px"}, 500);
 	f.animate({"color":"black", "font-size":"1.1em", "margin-top":"0px", "margin-left":"0px"},500);
 	$('#divIntro p').css({"text-shadow":"none"});
-	$("#and").animate({"position":"relative", "top":"0px"}, 500);
 	$('#divIntro p').animate({"margin-top":"0px"},260,function(){$("#divIntro").animate({"margin-top":"0px","margin-left":"36px"},260);$('#divMore').show(500);});
 	
 	a.text("Win Wang");
