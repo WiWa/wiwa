@@ -1,6 +1,5 @@
 <head>
   <title>Win Wang</title>
-
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -11,53 +10,52 @@
   ga('send', 'pageview');
 
 </script>
-
 </head>
-
 <body>
-
-
 {{> viewMain}}
-
 </body>
 
+
+
 <template name="viewMain">
+<div id="columnMain">
 <div id="header">
-  <ul>
-  	<li id="navHome">Home</li>
-  	<li id="navProjects">Projects</li>
+</div>
+<div id="divMid">
+
+<div id="headerElements">
+  <ul class="tabul">
+  	<li class='tabli' id="navHome">Home</li>
+  	<li class="tabli" id="navProjects">Projects</li>
   </ul>
 </div>
 
-<div id="columnMain">
 <div id="columnInner">
-
   <div id="divHome" class="view" >
   {{>viewHome}}
   </div>
 
   <div id="divProjects" class="view" >
-    <div id="div2Projects" >
-    <h1 style="font-size:3em;margin-bottom:10px">Projects</h1><hr/>
-    </div>
-  <hr/>
-    <h2>Upcoming Projects</h2>
-	<div class='project'><a href='https://github.com/wiwa/mucleus'><img src='./mu.png' class='upcomingImg'/></a><a href='https://github.com/wiwa/mucleus'><p class='projectTitle'>Mucleus</p></a>A hub for learners of all kinds.</div>
-    </h2>
+    {{>viewProjects}}
   </div>
+</div>
 
+<div id="footerElements">
+  <ul  class="tabul">
+  <li class="tabli" id="divSocial">
+  	<a href="https://www.linkedin.com/pub/win-wang/68/504/212"><img src="./linkedinicon.png" name="libtn" id="libtn" class="bicon"/><label for="libtn" id="lilbl">LinkedIn</label></a>
+<a href="https://www.github.com/WiWa"><img src="./githubicon.png" name="ghbtn" id="ghbtn" class="bicon"/><label for="ghbtn" id="ghlbl">GitHub</label></a>
+  </li>
+  <li class="tabli" id="wiwa">W i W a</li>
+  <li class="tabli" id="footerEmail">wang.win0@gmail.com</li>
+  </ul>
 </div>
 </div>
 
 <div id="footer">
-	<div id="divSocial">
-  	<a href="https://www.linkedin.com/pub/win-wang/68/504/212"><img src="./linkedinicon.png" name="libtn" id="libtn" class="bicon"/><label for="libtn" id="lilbl">LinkedIn</label></a>
-<a href="https://www.github.com/WiWa"><img src="./githubicon.png" name="ghbtn" id="ghbtn" class="bicon"/><label for="ghbtn" id="ghlbl">GitHub</label></a>
-	</div>
-  <p>W i W a </p><div id="footerEmail">wang.win0@gmail.com</div>
-  	
 </div>
 
+</div>
 </template>
 
 <template name="viewHome">
@@ -67,20 +65,29 @@
 </div>
 
 <div id="divIntro">
-<p style="text-weight:bold">Hey there, I'm Win</p>
-<p class="bt">I'm an undergrad CS/Physics major,</p>
-<p class="bt">Software Developer <span id="and">and</span> </p>
-<p class="bt">I'll be actively participating in creating our
-<p class="bt">beautiful future</p>
-<p>See you on the way!</p>
+<div id="divText">
+  <p style="text-weight:bold">Hey there, I'm Win</p>
+  <p class="bt">I'm a CS/Physics student and software developer</p>
+  <p class="bt">I'll be actively participating in creating our beautiful future</p>
+  <p>See you on the way!</p>
 <label id="ablbl">More About Me!</label>
 
 <div id="divMore" style="display:none">
-<p>I'm currently a freshman at Vanderbilt University, but grew up in New York City. During my time at Stuyvesant High School, I participated in FTC Robotics, eventually becoming the leader of team 310 (Stuy Fission), which works closely with its sister team, team 479 (Stuy Fusion). At Vanderbilt, I'm working to create a Splash! chapter, an idea I was first introduced to by MIT Splash, which I attended as a student, then a teacher. I'm looking into research in either 2-D materials (graphene, MoS2) or robotics, while developing my own projects and my skillset.</p>
+<p>I'm pursuing a B.S. in Computer Science and Physics at Vanderbilt University. My hometown is New York City, where I attended its (in)famous Stuyvesant High School. There, I had a great time with FTC Robotics, eventually becoming leader of team 310 (Stuy Fission) and working closely its sister team, team 479 (Stuy Fusion). At Vanderbilt, I'm creating a Splash! chapter, being heavily inspired by MIT Splash which I had the honor of attending as a both a student and a teacher. Currently, I'm looking into research in either 2-D materials (graphene, MoS2) or robotics, while developing my own projects and my skillset.</p>
+</div>
+</div>
 </div>
 
-</div>
+</template>
 
+<template name="viewProjects">
+<div id="div2Projects" >
+    <h1 style="font-size:3em;margin-bottom:10px">Projects</h1><hr/>
+</div>
+  <hr/>
+    <h2>Upcoming Projects</h2>
+	<div class='project'><a href='https://github.com/wiwa/mucleus'><img src='./mu.png' class='upcomingImg'/></a><a href='https://github.com/wiwa/mucleus'><p class='projectTitle'>Mucleus</p></a>A hub for learners of all kinds.</div>
+    </h2>
 </template>
 
 

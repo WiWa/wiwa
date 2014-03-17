@@ -1,0 +1,39 @@
+viewMainEvents = {
+    'click #navHome' : function () {
+	Session.set("view", 0);
+	$("#divHome").css({"display":"inline"});
+	$(".view[id!=divHome]").hide();
+	//console.log(Session.get("view"))
+	
+    },
+
+    'click #navProjects' : function () {
+	Session.set("view", 1);
+	$("#divProjects").css({"display":"inline"});
+	$(".view[id!=divProjects]").hide();
+	//console.log(Session.get("view"))
+    },
+
+
+    'click li' : function () {
+	for(var i = 0; i < views.length; i++){
+
+	  if(Session.get("view") == i){
+	    $("#"+views[i] ).css({
+	    	"box-shadow": "0 5px 2px -2px rgba(0, 205, 255, 0.95)"
+	    });
+	  }
+	  else{
+	    $("#"+views[i] ).css({
+	    	"box-shadow": ""
+	    });
+	  }
+
+	}
+    },
+
+    'click #ablbl' : function (){
+	normalHome();
+    }
+
+  }

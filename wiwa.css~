@@ -1,33 +1,58 @@
 /* CSS declarations go here */
+html{
+	width:100%;
+	height:0;
+}
 body{
-    height: 100%;
-	min-width:1500px;
-	margin:0;
 	font-family: "Helvetica Neue", Helvetica, Arial , sans-serif;
 	background-color:#d2d2d2;
 	color:white;
+	width:100%;
+	margin:0;
+}
+a:{ text-decoration: none; color:black; }
+a:visited { text-decoration: none; color:black; }
+a:link { text-decoration: none; color:black; }
+a:active { text-decoration: none; color:black; }
+
+label{
+	color:white;
+	text-decoration:none;
+}
+label:hover{cursor:pointer}
+#columnMain{
+	width:100%;
 }
 
 #header{
 	background-color:black;
 	width:100%;
+	min-width:1200px;
 	height:100px;
 	float:left;
+	position:relative;
 	/*background: linear-gradient(black 90px, #c9c9c9);*/
 }
-
-#header ul{
-	text-align:center;
-	margin-top:30px;
+#headerElements{
+	color:white;
+	width:100%;
+	height:100px;
+	float:left;
+	position:relative;
+	top:-90px;
 }
-
-#header li
-{
+.tabul{
+	text-align:center;
+}
+#headerElements .tabli{
 	font-size:2.2em;
-	display: inline;
-	list-style-type: none;
 	margin-left: 82px;
 	margin-right: 82px;
+}
+.tabli
+{
+	display: inline;
+	list-style-type: none;
 /* Remove text-highlighting */
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -37,20 +62,20 @@ body{
 	user-select: none;
 }
 
-#header li:hover{
+#headerElements li:hover{
 	cursor:pointer;
 	box-shadow: 0 5px 2px -2px rgba(0, 205, 255, 0.7);
 }
 
 #footer {
-	font-size:1.8em;
+	font-size:1em;
+	z-index:-1;
 	color:black;
 	width:100%;
-	height:132px;
+	min-width:1200px;
+	height:120px;
 	float:left;
-	text-align:center;
 	position:relative;
-	top:50px;
 background:
 radial-gradient(black 15%, transparent 16%) 0 0,
 radial-gradient(black 15%, transparent 16%) 4px 4px,
@@ -59,77 +84,62 @@ radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 4px 4.5px;
 background-color:#282828;
 background-size:8px 8px;
 }
-
-#footer p{
-	margin-top:42px;
-	font-size:1.3em;
+#footerElements{
+	font-size:1em;
 	color:white;
-	position:absolute;
-	left:850px;
+	width:100%;
+	height:132px;
+	float:left;
+	position:relative;
+	top:100px;
+}
+#footerElements .tabul{
+	font-size:1.4em;
+}
+#footerElements .tabli{
+	margin-left:32px;
+	margin-right:32px;
+}
+#wiwa{
+	font-size:1.6em;
 	box-shadow: 0 5px 2px -2px rgba(0, 205, 255, 1);
 }
-#divSocial{
-	float:left;
-	margin-top:27px;
-	margin-left:360px;
+#divMid{
+	width:1200px;
+	margin:0 auto;
 }
-
-#divSocial a{
-	float:left;
-}
-
-#footerEmail{
-	margin-top:44.2px;
-	color:white;
-	float:left;
-	margin-left:400px;
-}
-
 #columnInner{
 	position:relative
 	margin:0 auto;
-	min-height:800px;
 }
 
 
-#divProjects{
-	font-size:1.2em;
-	position:relative;
-	top:5px;
-	left:300px;
-	width:1000px;
-	float:left;
-	color:black;
-}
-#divUpcoming{
-}
-a:{ text-decoration: none; color:black; }
-a:visited { text-decoration: none; color:black; }
 #divHome{
 	position:relative;
-	top:90px;
-	left:300px;
 	float:left;
-	min-width:900px;
+	margin-top:35px;
 }
 #divImgs{
 	width:360px;
 	height:480px;
     overflow: hidden;
 	float:left;
+	margin-left:40px;
 	border-radius: 20px 20px 20px 20px;
 	/*box-shadow: 0px 0px 20px 3.5px rgba(0, 205, 255, 0.6);*/
 }
 #divIntro {
 	width:760px;
-	float:left;
-	margin-left:240px;
-	text-shadow: 2.5px 2.5px 3px black;
+	float:right;
+	margin-left:0px;
+	text-shadow: 3px 2.5px 3.5px black;
 	line-height:30px;
+}
+#divText{
+	margin-left:140px;
 }
 #ablbl{
 	font-size:1.2em;
-	margin-left:42px;
 	text-decoration:underline;
 	text-shadow: none;
 	color:black;
@@ -141,17 +151,14 @@ a:visited { text-decoration: none; color:black; }
 }
 
 #libtn{
-	margin-left:20px;
+	
 }
-
-label{
-	color:white;
-	position:relative;
-	top:-30px;
+#divProjects{
+	font-size:1.2em;
+	float:left;
+	color:black;
 }
-label:hover{cursor:pointer}
-#footer label{
-	text-decoration:none;
+#divUpcoming{
 }
 
 .project{
@@ -176,7 +183,8 @@ label:hover{cursor:pointer}
 .bicon{
 	width:80px;
 	height:80px;
-
+	position:relative;
+	top:27px;
 }
 
 .projectTitle{
