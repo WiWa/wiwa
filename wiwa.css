@@ -3,7 +3,7 @@ body{
     height: 100%;
 	min-width:1500px;
 	margin:0;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial , sans-serif;
 	background-color:#c9c9c9;
 	color:white;
 }
@@ -103,6 +103,7 @@ background-size:8px 8px;
 }
 #divUpcoming{
 }
+a:{ text-decoration: none; color:black; }
 a:visited { text-decoration: none; color:black; }
 #divHome{
 	position:relative;
@@ -136,9 +137,8 @@ a:visited { text-decoration: none; color:black; }
 #divMore{
 	color:black;
 	text-shadow: none;
-	font-size:1.4em;
+	font-size:1.25em;
 }
-#ablbl:hover{cursor:pointer}
 
 #libtn{
 	margin-left:20px;
@@ -148,6 +148,10 @@ label{
 	color:white;
 	position:relative;
 	top:-30px;
+}
+label:hover{cursor:pointer}
+#footer label{
+	text-decoration:none;
 }
 
 .project{

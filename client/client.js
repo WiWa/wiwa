@@ -91,7 +91,6 @@ function styleHome(){
 		d.css({"font-size":"1.8em", "margin-bottom":"-20px" }, 700);
 		e.css({"font-size":"1.8em", "margin-bottom":"-12px", "margin-left":"60px"}, 700);
 		f.css({"font-size":"3.1em", "margin-top":"52px", "margin-left":"30px"});
-
 }
 function normalHome(){
 	$("#ablbl").hide();
@@ -111,6 +110,12 @@ function normalHome(){
 	$("#and").animate({"position":"relative", "top":"0px"}, 500);
 	$('#divIntro p').animate({"margin-top":"0px"},260,function(){$("#divIntro").animate({"margin-top":"0px","margin-left":"36px"},260);$('#divMore').show(500);});
 	
+	a.text("Win Wang");
+	b.text("Gamer");
+	c.text("Student");
+	d.text("Physicist");
+	e.text("Computer Scientist");
+	f.text("");
 }
 
 
