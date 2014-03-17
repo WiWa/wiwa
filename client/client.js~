@@ -25,7 +25,7 @@ if (Meteor.isClient) {
 
 	  if(Session.get("view") == i){
 	    $("#"+views[i] ).css({
-	    	"box-shadow": "0 5px 2px -1px rgba(0, 255, 255, 0.95)"
+	    	"box-shadow": "0 5px 2px -1px rgba(0, 205, 255, 0.95)"
 	    });
 	  }
 	  else{
@@ -35,6 +35,10 @@ if (Meteor.isClient) {
 	  }
 
 	}
+    },
+
+    'click #ablbl' : function (){
+	normalHome();
     }
 
   });
@@ -58,11 +62,12 @@ if (Meteor.isClient) {
 		Projects = new Meteor.Collection("projects");
 		var pArr = Projects.find().fetch();
 		for (var i = 0; i < pArr.length; i++){
-			var p = "<div>"+"<a href='https://github.com/stuycs-softdev-2012-2013/WWEB'><img src='"+pArr[i]['image']+"'class='icon'/></a>"+"<a href='https://github.com/stuycs-softdev-2012-2013/WWEB'><p class='projectTitle'>"+pArr[i]['name']+"</p></a>"+pArr[i]['description']+"</div>";
-			$("#divProjects").append(p);
+			var p = "<div class='project'>"+"<a href='"+pArr[i]['link']+"'><img src='"+pArr[i]['image']+"'class='projectImg'/></a>"+"<a href='https://github.com/stuycs-softdev-2012-2013/WWEB'><p class='projectTitle'>"+pArr[i]['name']+"</p></a>"+pArr[i]['description']+"</div>";
+			$("#div2Projects").append(p);
 		}
 	});
 	styleHome();
+		console.log($("#and")[0]);
   }
 
 }
@@ -75,17 +80,36 @@ function styleHome(){
 	var d = $($('#divIntro p')[3]);
 	var e = $($('#divIntro p')[4]);
 	var f = $($('#divIntro p')[5]);
+	$("#and").css({"position":"relative", "top":"0px"}, 700)
+	
+	$('#divIntro p').css({"margin-top":"40px"});
+	$('#divIntro').animate({"margin-top":"30px"},600,function(){
+		$("#and").animate({"top":"5px"}, 400);})
+		a.css({"font-size":"4.1em", "margin-bottom":"-5px", "margin-left":"-30px"}, 700);
+		b.css({"font-size":"1.8em", "margin-bottom":"-20px"}, 700);
+		c.css({"font-size":"1.8em", "margin-bottom":"-20px", "margin-left":"80px"}, 700);
+		d.css({"font-size":"1.8em", "margin-bottom":"-20px" }, 700);
+		e.css({"font-size":"1.8em", "margin-bottom":"-12px", "margin-left":"60px"}, 700);
+		f.css({"font-size":"3.1em", "margin-top":"52px", "margin-left":"30px"});
 
-	$('#divIntro').animate({"margin-top":"140px"},500);
-	$('#divIntro p').animate({"margin-top":"40px"},500, function(){
-		a.animate({"font-size":"4.1em", "margin-bottom":"-5px", "margin-left":"-30px"}, 800);
-		b.animate({"font-size":"1.8em", "margin-bottom":"-20px"}, 700);
-		c.animate({"font-size":"1.8em", "margin-bottom":"-20px", "margin-left":"80px"}, 700);
-		d.animate({"font-size":"1.8em", "margin-bottom":"-20px" }, 700);
-		e.animate({"font-size":"1.8em", "margin-bottom":"-12px", "margin-left":"60px"}, 700);
-		f.animate({"font-size":"3.1em", "margin-top":"52px", "margin-left":"30px"}, 700);
-	});
-
+}
+function normalHome(){
+	$("#ablbl").hide();
+	var a = $($('#divIntro p')[0]);
+	var b = $($('#divIntro p')[1]);
+	var c = $($('#divIntro p')[2]);
+	var d = $($('#divIntro p')[3]);
+	var e = $($('#divIntro p')[4]);
+	var f = $($('#divIntro p')[5]);
+	a.animate({"color":"black", "font-size":"1.1em", "margin-bottom":"0px", "margin-left":"0px"}, 500);
+	b.animate({"font-size":"1.1em", "margin-bottom":"0px"}, 500);
+	c.animate({"font-size":"1.1em", "margin-bottom":"0px", "margin-left":"0px"}, 500);
+	d.animate({"font-size":"1.1em", "margin-bottom":"0px" }, 500);
+	e.animate({"font-size":"1.1em", "margin-bottom":"0px", "margin-left":"0px"}, 500);
+	f.animate({"color":"black", "font-size":"1.1em", "margin-top":"0px", "margin-left":"0px"},500);
+	$('#divIntro p').css({"text-shadow":"none"});
+	$("#and").animate({"position":"relative", "top":"0px"}, 500);
+	$('#divIntro p').animate({"margin-top":"0px"},260,function(){$("#divIntro").animate({"margin-top":"0px","margin-left":"36px"},260);$('#divMore').show(500);});
 	
 }
 

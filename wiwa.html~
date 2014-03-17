@@ -1,5 +1,5 @@
 <head>
-  <title>WiWa</title>
+  <title>Win Wang</title>
 </head>
 
 <body>
@@ -10,51 +10,63 @@
 </body>
 
 <template name="viewMain">
-<div id="columnMain">
-
 <div id="header">
-<ul>
-  <li id="navHome">Home</li>
-  <li id="navProjects">Projects</li>
-</ul>
+  <ul>
+  	<li id="navHome">Home</li>
+  	<li id="navProjects">Projects</li>
+  </ul>
 </div>
 
+<div id="columnMain">
 <div id="columnInner">
 
-<div id="divHome" class="view" >
+  <div id="divHome" class="view" >
+  {{>viewHome}}
+  </div>
 
-{{>viewHome}}
+  <div id="divProjects" class="view" >
+    <div id="div2Projects" >
+    <h1 style="font-size:3em;margin-bottom:10px">Projects</h1><hr/>
+    </div>
+  <hr/>
+    <h2>Upcoming Projects</h2>
+	<div class='project'><a href='https://github.com/wiwa/mucleus'><img src='./mu.png'class='projectImg'/></a><a href='https://github.com/wiwa/mucleus'><p class='projectTitle'>Mucleus</p></a>A hub for learners of all kinds.</div>
+    </h2>
+  </div>
 
 </div>
-
-<div id="divProjects" class="view" >
-<h1 style="font-size:3em;margin-bottom:-10px">Projects</h1>
-</div>
-
 </div>
 
 <div id="footer">
-<p>W i W a  </p>
+	<div id="divSocial">
+  	<a href="https://www.linkedin.com/pub/win-wang/68/504/212"><img src="./linkedinicon.png" name="libtn" id="libtn" class="bicon"/><label for="libtn" id="lilbl">LinkedIn</label></a>
+<a href="https://www.github.com/WiWa"><img src="./githubicon.png" name="ghbtn" id="ghbtn" class="bicon"/><label for="ghbtn" id="ghlbl">GitHub</label></a>
+	</div>
+  <p>W i W a </p><div id="footerEmail">wang.win0@gmail.com</div>
+  	
 </div>
 
-</div>
 </template>
 
 <template name="viewHome">
-<div id="imgs">
+<div id="divImgs">
 <img id="picme"src="/wiwa1.jpg"></img>
-<img src="http://image-store.slidesharecdn.com/895c642a-9660-11e3-85bc-22000aa90791-large.png" name="libtn" id="libtn" class="bicon"/><label for="libtn" id="lilbl">LinkedIn</label>
+
 </div>
 
 <div id="divIntro">
-<div id="introText">
 <p>Hey there, I'm Win</p>
-<p class="bt"> an undergrad CS/Physics major,</p>
-<p class="bt">Software Developer and Gamer.</p>
+<p class="bt">I'm an undergrad CS/Physics major,</p>
+<p class="bt">Software Developer <span id="and">and</span> </p>
 <p class="bt">I'll be actively participating in creating our
 <p class="bt">beautiful future</p>
 <p>See you on the way!</p>
-<div>
+<label id="ablbl">More About Me!</label>
+
+<div id="divMore" style="display:none">
+<p>I'm currently a freshman at Vanderbilt University in Nashville, TN, but my hometown is New York City (Stuy grad here!). During high school, I participated in FTC Robotics, eventually becoming the leader of team 310 (Stuy Fission), which works closely with its sister team, team 479 (Stuy Fusion). At Vanderbilt, I'm working to create a Splash! chapter, an idea that came to me while teaching physics at MIT Splash (Turns out a lot of kids like it!). I'm thinking about research in either 2-D materials (graphene, MoS2) or robotics. Either way, the future looks exciting!</p>
+</div>
+
 </div>
 
 </template>

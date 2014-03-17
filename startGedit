@@ -1,0 +1,2 @@
+#!/bin/bash
+gedit wiwa.html wiwa.css client/client.js server/server.js
