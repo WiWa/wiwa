@@ -62,7 +62,7 @@ if (Meteor.isClient) {
 		Projects = new Meteor.Collection("projects");
 		var pArr = Projects.find().fetch();
 		for (var i = 0; i < pArr.length; i++){
-			var p = "<div class='project'>"+"<a href='"+pArr[i]['link']+"'><img src='"+pArr[i]['image']+"'class='projectImg'/></a>"+"<a href='https://github.com/stuycs-softdev-2012-2013/WWEB'><p class='projectTitle'>"+pArr[i]['name']+"</p></a>"+pArr[i]['description']+"</div>";
+			var p = "<div class='project'>"+"<a href='"+pArr[i]['link']+"'><img src='"+pArr[i]['image']+"'class='projectImg'/></a>"+"<a href='"+pArr[i]['link']+"'><p class='projectTitle'>"+pArr[i]['name']+"</p></a>"+pArr[i]['description']+"</div>";
 			$("#div2Projects").append(p);
 		}
 	});
