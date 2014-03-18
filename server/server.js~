@@ -8,12 +8,12 @@ if (Meteor.isServer) {
 		name:"Babble",
 		image:"./babble.png",
 		link:"https://github.com/stuycs-softdev-2012-2013/WWEB",
-		description:'"Language Learning Through Your Browser" is the idea behind this Chrome Extension. I worked in a small team during my soft dev course to create this, which we presented at Google NYC (coolest idea of the night)! Worked on design, implemented extension, translation, quiz, profile functionality (full stack).'},
+		description:'"Language Learning Through Your Browser" is the idea behind this Chrome app (extension). I worked in a small team during my soft dev course to create this, which we presented at Google NYC (coolest idea of the night)! Worked on design, implemented extension, translation, quiz, profile functionality.'},
 		{
 		name:"StuyWeb",
 		image:"./stuyweb.png",
 		link:"https://github.com/stuycs-ml7-projects-2012-2013/StuyWeb",
-		description:"A private social network for my high school, one in which students and teachers could converse freely and without distraction. A project for my soft dev course."
+		description:"A private social network for my high school, one in which students and teachers could converse freely and without distraction. A project for my soft dev course built in Python."
 		}
 	    ]
 
