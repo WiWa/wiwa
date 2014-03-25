@@ -41,12 +41,30 @@
 
 <div id="footerElements">
   <ul  class="tabul">
-  <li class="tabli" id="divSocial">
-  	<a href="https://www.linkedin.com/pub/win-wang/68/504/212"><img src="./linkedinicon.png" name="libtn" id="libtn" class="bicon"/><label for="libtn" id="lilbl">LinkedIn</label></a>
-<a href="https://www.github.com/WiWa"><img src="./githubicon.png" name="ghbtn" id="ghbtn" class="bicon"/><label for="ghbtn" id="ghlbl">GitHub</label></a>
+
+  <li class="tabli">
+    <a href="https://www.linkedin.com/pub/win-wang/68/504/212" class="li" id="libtn">
+	<img src="./linkedinicon.png" name="libtn"  class="btnicon"/>
+	<label for="libtn" id="lilbl">LinkedIn</label>
+    </a>
   </li>
-  <li class="tabli" id="wiwa">W i W a</li>
-  <li class="tabli" id="footerEmail">wang.win0@gmail.com</li>
+
+  <li class="tabli">
+    <a href="https://www.github.com/WiWa" class="gh"  id="ghbtn">
+	<img src="./githubicon.png" name="ghbtn" class="btnicon"/>
+	<label for="ghbtn" id="ghlbl">GitHub</label>
+    </a>
+  </li>
+
+  <!-- <li class="tabli" id="wiwa">W i W a</li> -->
+
+  <li class="tabli">
+    <a href="#" class="em" id="embtn">
+	<img src="./emailicon.png" name="embtn" class="btnicon"/>
+	<label for="embtn" id="emlbl">Email</label>
+    </a>
+  </li>
+
   </ul>
 </div>
 </div>
@@ -58,20 +76,21 @@
 
 <template name="viewHome">
 <div id="divImgs">
-<img id="picme"src="/wiwa1.jpg"></img>
+<img id="picme"src="/wiwa1.jpg" style="margin-top:-20px"></img>
 
 </div>
 
 <div id="divIntro">
 <div id="divText">
-  <p style="text-weight:bold">Hey there, I'm Win</p>
-  <p class="bt">I'm a CS/Physics student and software developer</p>
-  <p class="bt">I'll be actively participating in creating our beautiful future</p>
-  <p>See you on the way!</p>
-<label id="ablbl">More About Me!</label>
+  <p class='hey'>Hey there, I'm Win</p>
+  <p class="tre">CS & Physics student and Software Developer</p>
+  <p class="tre">I'm fascinated with the tech world and the future it promises</p>
+  <p class="tre">See you on the way there!</p>
+<label id="ablbl">More About Me</label>
 
 <div id="divMore" style="display:none">
-<p>I'm pursuing a B.S. in Computer Science and Physics at Vanderbilt University. My hometown is New York City, where I attended its (in)famous Stuyvesant High School. There, I had a great time with FTC Robotics, eventually becoming leader of team 310 (Stuy Fission) and working closely its sister team, team 479 (Stuy Fusion). At Vanderbilt, I'm creating a Splash! chapter, being heavily inspired by MIT Splash which I had the honor of attending as a both a student and a teacher. Currently, I'm looking into research in either 2-D materials (graphene, MoS2) or robotics, while developing my own projects and my skillset.</p>
+<hr/>
+<p>I'm studying Computer Science and Physics at Vanderbilt University. I attended New York City's (in)famous Stuyvesant High School where I had a great time with FTC Robotics and physics research groups. During my senior year, I led team 310 (Stuy Fission) and worked closely with its sister team, team 479 (Stuy Fusion). At Vanderbilt I'm creating a Splash! chapter, heavily inspired by MIT Splash which I went to as a both a student and a teacher. Currently, I'm looking into research in either 2-D materials (graphene, MoS2) or robotics, while developing my own projects and my skillset.</p>
 </div>
 </div>
 </div>
@@ -79,15 +98,12 @@
 </template>
 
 <template name="viewProjects">
+
 <div id="div2Projects" >
-    <h1 style="font-size:3em;margin-bottom:10px">Projects</h1><hr/>
+    <h1 id='projects' class="tre">Projects</h1>
+    <hr/>
 </div>
-  <hr/>
-<!--
-    <h2>Upcoming Projects</h2>
-	<div class='project'><a href='https://github.com/wiwa/mucleus'><img src='./mu.png' class='upcomingImg'/></a><a href='https://github.com/wiwa/mucleus'><p class='projectTitle'>Mucleus</p></a>A hub for learners of all kinds.</div>
-    </h2>
--->
+
 </template>
 
 
