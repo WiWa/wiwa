@@ -190,7 +190,7 @@ background-size:8px 8px;
 	-webkit-text-stroke: 1px gray;
 }
 .tre{
-	font-family: Trench;
+	font-family: Trench, "Helvetica Light","Open Sans", "Helvetica", Arial , sans-serif;
 }
 #ablbl{
 	font-size:1.2em;
