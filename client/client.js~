@@ -38,8 +38,7 @@ if (Meteor.isClient) {
 //////// Show Email
     'click #embtn' : function (){
 	if(typeof(emailShown)=='undefined'){
-		$("#emlbl").unbind('mouseenter mouseleave', function(){$("#emlbl").hide(250,function(){$("#emlbl").text("wang.win0@gmail.com").show(300, function(){$(".em").hover(function(){$("#emlbl").stop(true).animate({"opacity":"1"},150)},function(){$("#emlbl").stop(true).animate({"opacity":".64"},150)});}) }); });
-		
+		$("#emlbl").text("wang.win0@gmail.com");
 		emailShown = true;
 	}
     },

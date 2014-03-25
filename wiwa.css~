@@ -197,7 +197,6 @@ background-size:8px 8px;
 	text-decoration:underline;
 	text-shadow: none;
 	color:black;
-	margin-top:15px;
 }
 #divMore{
 	color:black;
@@ -221,7 +220,7 @@ background-size:8px 8px;
 }
 
 #projects{
-	font-size:4.2em;
+	font-size:4.2em !important;
 	margin-bottom:-15px;
 }
 

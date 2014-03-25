@@ -85,7 +85,7 @@
   <p class='hey'>Hey there, I'm Win</p>
   <p class="tre">CS & Physics student and Software Developer</p>
   <p class="tre">I'm fascinated with the tech world and the future it promises</p>
-  <p class="tre">See you on the way!</p>
+  <p class="tre">See you on the way there!</p>
 <label id="ablbl">More About Me</label>
 
 <div id="divMore" style="display:none">

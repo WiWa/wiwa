@@ -102,7 +102,7 @@ function normalHome(){
 	$('#divText').animate({"padding":"0"},300);
 	
 	a.animate({"color":"black","font-size":"2.6em", "margin-left":"0"},300);
-	$('.tre').animate({"color":"black","font-size":"1.3em"},300);
+	$('divIntro .tre').animate({"color":"black","font-size":"1.3em"},300);
 	a.removeClass('hey').addClass('tre');
 	a.css({"text-shadow":"none"});
 
