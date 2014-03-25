@@ -18,7 +18,6 @@
 
 
 <template name="viewMain">
-<div id="columnMain">
 <div id="header">
 </div>
 <div id="divMid">
@@ -55,7 +54,6 @@
 <div id="footer">
 </div>
 
-</div>
 </template>
 
 <template name="viewHome">
