@@ -23,11 +23,13 @@
 <template name="viewMain">
 <div id="header">
 </div>
+
+
 <div id="divMid">
 
+
 <div id="headerElements">
-  
-<div id="divWin"class="tre"><h1 id="winhead">Win Wang</h1><p>Software Developer</p></div>
+
   <ul class="tabul">
   	<li class="tabli" id="navHome">Home</li>
   <!--	<li class="tabli cstruction" id="navHome">Blog</li> -->
@@ -84,8 +86,8 @@
 
 </div>
 
-<footer id="footer">
-</footer>
+<div id="footer">
+</div>
 
 </template>
 

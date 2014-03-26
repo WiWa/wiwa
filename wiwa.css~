@@ -1,5 +1,26 @@
 /* CSS declarations go here */
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
 @font-face
 {
 font-family: Trench;
@@ -8,7 +29,7 @@ src: url(./trench100free.otf);
 
 html{
 	width:100%;
-	height:0;
+	height:100%;
 }
 body{
 	font-family: "Helvetica Light", Arial , sans-serif;
@@ -16,13 +37,6 @@ body{
 	/*background-color:#d2d2d2; 
 	background-image:url(./bg2.jpg);
 	background-color:#e0e0e0;*/
-	background-image:url(./bg4.png);
-	background-attachment:fixed;
-	background-repeat:no-repeat;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
 	background-color:rgb(237,237,237);
 	color:white;
 	width:100%;
@@ -35,11 +49,11 @@ a:active { text-decoration: none; color:black; }
 
 
 label:hover{cursor:pointer}
-/*div{
+div {
 	border-style:solid;
 	border-width:1px;
 	border-color:blue;
-}*/
+}
 
 #header{
 	background-color:black;
@@ -48,19 +62,34 @@ label:hover{cursor:pointer}
 	height:160px;
 	float:left;
 	position:relative;
+	z-index:-1;
 	/*background: linear-gradient(black 90px, #c9c9c9);*/
 }
 #divWin{
 	cursor:default;
+	height:160px;
 	font-size:1.5em;
-	margin-bottom:-40px;
+	position:relative;
+	top:-160px;
+	float:left;
+	overflow:hidden;
 }
 #divWin h1{
 	font-size:3.4em;
-	margin-bottom:-40px;
+	margin:0;
+	margin-bottom:-20px;
 }
 #divWin p{
 	margin-left:35px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+#contactme{
+	position:relative;
+	top:20px;
+}
+.contactsMenu{
+	display:none;
 }
 #headerElements{
 	color:white;
@@ -68,7 +97,8 @@ label:hover{cursor:pointer}
 	height:100px;
 	float:left;
 	position:relative;
-	top:-200px;
+	top:-260px;
+	overflow:hidden;
 }
 .tabul{
 	text-align:center;
@@ -88,14 +118,6 @@ label:hover{cursor:pointer}
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
-}
-
-.tabli label{
-	color:white;
-	text-decoration:none;
-	position:relative;
-	top:-4px;
-	opacity:.64;
 }
 
 #headerElements li:hover:not(.cstruction){
@@ -124,7 +146,7 @@ radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 4px 4.5px;
 background-color:#282828;
 background-size:8px 8px;
 	position:relative;
-	top:0;
+	top:-160px;
 	z-index:-1;
 	/*position: fixed;
 	top:100%;
@@ -141,7 +163,7 @@ background-size:8px 8px;
 	height:130px;
 	float:left;
 	position:relative;
-	top:130px;
+	top:-30px;
 	
 /*
 	position:fixed;
@@ -160,9 +182,12 @@ background-size:8px 8px;
 	margin-left:16px;
 	margin-right:16px;
 }
-#wiwa{
-	font-size:1.6em;
-	box-shadow: 0 5px 2px -2px rgba(0, 205, 255, 1);
+.tabli label{
+	color:white;
+	text-decoration:none;
+	position:relative;
+	top:-4px;
+	opacity:.64;
 }
 
 .btnicon{
@@ -171,23 +196,40 @@ background-size:8px 8px;
 	position:relative;
 	top:27px;
 }
+/*
+#bgd{
+	position:fixed;
+	width:100%;
+	height:1000px;
+	top:160;
+	margin-bottom:-140px;
+	z-index:-2;
 
+
+	background-image:url(./bg4.png);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+*/
 #divMid{
 	width:1200px;
 	margin:0 auto;
 }
 #columnInner{
-	position:relative
+	position:relative;
 	margin:0 auto;
+	top:-160px;
 }
-
 
 #divHome{
 	width:1050px;
 	position:relative;
 	float:left;
 	margin-left:75px;
-	padding-bottom:160px;
 }
 #divImgs{
 	width:300px;
@@ -255,7 +297,6 @@ background-size:8px 8px;
 	float:left;
 	margin-left:75px;
 	top:-60px;
-	padding-bottom:160px;
 }
 
 #projects{
