@@ -47,6 +47,7 @@ label:hover{cursor:pointer}
 	/*background: linear-gradient(black 90px, #c9c9c9);*/
 }
 #divWin{
+	cursor:default;
 	width:340px;
 	font-size:1.5em;
 	margin-bottom:-40px;
