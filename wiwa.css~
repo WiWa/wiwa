@@ -11,7 +11,7 @@ html{
 	height:0;
 }
 body{
-	font-family: "Helvetica Light","Open Sans", "Helvetica", Arial , sans-serif;
+	font-family: "Helvetica Light", Arial , sans-serif;
 	font-weight: 100;
 	/*background-color:#d2d2d2; 
 	background-image:url(./bg2.jpg);
@@ -41,10 +41,22 @@ label:hover{cursor:pointer}
 	background-color:black;
 	width:100%;
 	min-width:1200px;
-	height:100px;
+	height:160px;
 	float:left;
 	position:relative;
 	/*background: linear-gradient(black 90px, #c9c9c9);*/
+}
+#divWin{
+	width:340px;
+	font-size:1.5em;
+	margin-bottom:-40px;
+}
+#divWin h1{
+	font-size:3.4em;
+	margin-bottom:-40px;
+}
+#divWin p{
+	text-align:center;
 }
 #headerElements{
 	color:white;
@@ -52,7 +64,7 @@ label:hover{cursor:pointer}
 	height:100px;
 	float:left;
 	position:relative;
-	top:-90px;
+	top:-200px;
 }
 .tabul{
 	text-align:center;
@@ -88,7 +100,7 @@ label:hover{cursor:pointer}
 }
 
 .cstruction{
-	cursor:normal;
+	cursor:not-allowed;
 	opacity:.5;
 }
 
@@ -194,7 +206,7 @@ background-size:8px 8px;
 	-webkit-text-stroke: 1px gray;
 }
 .tre{
-	font-family: Trench, "Helvetica Light","Open Sans", "Helvetica", Arial , sans-serif;
+	font-family: Trench, "Helvetica Light", Arial , sans-serif;
 }
 #ablbl{
 	font-size:1.2em;
