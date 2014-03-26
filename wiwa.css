@@ -1,26 +1,5 @@
 /* CSS declarations go here */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-
 @font-face
 {
 font-family: Trench;
@@ -54,8 +33,8 @@ label:hover{cursor:pointer}
 	border-width:1px;
 	border-color:blue;
 }*/
-
 #header{
+	display:block;
 	background-color:black;
 	width:100%;
 	min-width:1200px;
@@ -66,13 +45,13 @@ label:hover{cursor:pointer}
 	/*background: linear-gradient(black 90px, #c9c9c9);*/
 }
 #divWin{
+	display:block;
 	cursor:default;
 	height:160px;
 	font-size:1.5em;
 	position:relative;
-	top:-160px;
 	float:left;
-	overflow:hidden;
+	margin-top:-160px;
 }
 #divWin h1{
 	font-size:3.4em;
@@ -97,11 +76,12 @@ label:hover{cursor:pointer}
 	height:100px;
 	float:left;
 	position:relative;
-	top:-260px;
-	overflow:hidden;
+	margin-top:-100px;
 }
 .tabul{
 	text-align:center;
+	position:relative;
+	top:10px;
 }
 #headerElements .tabli{
 	font-size:2.2em;
@@ -146,7 +126,7 @@ radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 4px 4.5px;
 background-color:#282828;
 background-size:8px 8px;
 	position:relative;
-	top:-160px;
+	top:0px;
 	z-index:-1;
 	/*position: fixed;
 	top:100%;
@@ -163,7 +143,7 @@ background-size:8px 8px;
 	height:130px;
 	float:left;
 	position:relative;
-	top:-30px;
+	top:120px;
 	
 /*
 	position:fixed;
@@ -194,7 +174,6 @@ background-size:8px 8px;
 	width:80px;
 	height:80px;
 	position:relative;
-	top:27px;
 }
 /*
 #bgd{
@@ -219,10 +198,10 @@ background-size:8px 8px;
 	width:1200px;
 	margin:0 auto;
 }
-#columnInner{
+#inner{
+	display:inline-block;
 	position:relative;
-	margin:0 auto;
-	top:-160px;
+	margin-top:130px;
 }
 
 #divHome{
@@ -230,6 +209,7 @@ background-size:8px 8px;
 	position:relative;
 	float:left;
 	margin-left:75px;
+	margin-right: auto;
 }
 #divImgs{
 	width:300px;
@@ -282,7 +262,6 @@ background-size:8px 8px;
 	color:black;
 	text-shadow: none;
 	font-size:1.25em;
-	margin-top:10px;
 	line-height:32px;
 }
 
@@ -300,7 +279,7 @@ background-size:8px 8px;
 }
 
 #projects{
-	color: white;
+	color: black;
 	font-size:4.2em;
 	margin-bottom:-15px;
 }
@@ -309,7 +288,7 @@ background-size:8px 8px;
 	margin-bottom:32px;
 	height: 5px;
 	border: 0;
-	box-shadow: inset 0 6px 6px -6px white;
+	box-shadow: inset 0 6px 6px -6px black;
 }
 
 .projectDiv{
@@ -337,6 +316,9 @@ background-size:8px 8px;
 	margin:0;
 }
 
+.btnicon{
+	top:28px;
+}
 
 .view{
 	
