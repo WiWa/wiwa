@@ -62,8 +62,7 @@ label:hover{cursor:pointer}
 	margin-left: 82px;
 	margin-right: 82px;
 }
-.tabli
-{
+.tabli{
 	display: inline;
 	list-style-type: none;
 /* Remove text-highlighting */
@@ -83,9 +82,14 @@ label:hover{cursor:pointer}
 	opacity:.64;
 }
 
-#headerElements li:hover{
+#headerElements li:hover:not(.cstruction){
 	cursor:pointer;
 	box-shadow: 0 5px 2px -2px rgba(0, 205, 255, 0.7);
+}
+
+.cstruction{
+	cursor:not-allowed;
+	opacity:.5;
 }
 
 #footer {

@@ -117,11 +117,13 @@ function normalHome(){
 }
 
 function bindHandlers(){
-	$(".li").hover(function(){$("#lilbl").stop(true).animate({"opacity":"1"},150)},function(){$("#lilbl").stop(true).animate({"opacity":".64"},150)});
+	/*$(".li").hover(function(){$("#lilbl").stop(true).animate({"opacity":"1"},150)},function(){$("#lilbl").stop(true).animate({"opacity":".64"},150)});
 
 	$(".gh").hover(function(){$("#ghlbl").stop(true).animate({"opacity":"1"},150)},function(){$("#ghlbl").stop(true).animate({"opacity":".64"},150)});
 
-	$(".em").hover(function(){$("#emlbl").stop(true).animate({"opacity":"1"},150)},function(){$("#emlbl").stop(true).animate({"opacity":".64"},150)});
+	$(".em").hover(function(){$("#emlbl").stop(true).animate({"opacity":"1"},150)},function(){$("#emlbl").stop(true).animate({"opacity":".64"},150)});*/
+	$(".tabli a").hover(function(){ $("#"+$(this).attr('class')+"lbl").stop(true).animate({"opacity":"1"},150)},function(){ $("#"+$(this).attr('class')+"lbl").stop(true).animate({"opacity":".64"},150)});
+
 }
 
 

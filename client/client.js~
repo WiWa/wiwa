@@ -102,7 +102,7 @@ function normalHome(){
 	$('#divText').animate({"padding":"0"},300);
 	
 	a.animate({"color":"black","font-size":"2.6em", "margin-left":"0"},300);
-	$('.tre').animate({"color":"black","font-size":"1.3em"},300);
+	$('#divIntro .tre').animate({"color":"black","font-size":"1.3em"},300);
 	a.removeClass('hey').addClass('tre');
 	a.css({"text-shadow":"none"});
 
@@ -117,11 +117,13 @@ function normalHome(){
 }
 
 function bindHandlers(){
-	$(".li").hover(function(){$("#lilbl").stop(true).animate({"opacity":"1"},150)},function(){$("#lilbl").stop(true).animate({"opacity":".64"},150)});
+	/*$(".li").hover(function(){$("#lilbl").stop(true).animate({"opacity":"1"},150)},function(){$("#lilbl").stop(true).animate({"opacity":".64"},150)});
 
 	$(".gh").hover(function(){$("#ghlbl").stop(true).animate({"opacity":"1"},150)},function(){$("#ghlbl").stop(true).animate({"opacity":".64"},150)});
 
-	$(".em").hover(function(){$("#emlbl").stop(true).animate({"opacity":"1"},150)},function(){$("#emlbl").stop(true).animate({"opacity":".64"},150)});
+	$(".em").hover(function(){$("#emlbl").stop(true).animate({"opacity":"1"},150)},function(){$("#emlbl").stop(true).animate({"opacity":".64"},150)});*/
+	$(".tabli a").hover(function(){ $("#"+$(this).attr('class')+"lbl").stop(true).animate({"opacity":"1"},150)},function(){ $("#"+$(this).attr('class')+"lbl").stop(true).animate({"opacity":".64"},150)}); })
+
 }
 
 
