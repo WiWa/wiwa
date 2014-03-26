@@ -48,7 +48,6 @@ label:hover{cursor:pointer}
 }
 #divWin{
 	cursor:default;
-	width:340px;
 	font-size:1.5em;
 	margin-bottom:-40px;
 }
@@ -57,7 +56,7 @@ label:hover{cursor:pointer}
 	margin-bottom:-40px;
 }
 #divWin p{
-	text-align:center;
+	margin-left:35px;
 }
 #headerElements{
 	color:white;
