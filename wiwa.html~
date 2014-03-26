@@ -27,6 +27,7 @@
 
 <div id="headerElements">
   
+<div id="divWin"class="tre"><h1 id="winhead">Win Wang</h1><p>Software Developer</p></div>
   <ul class="tabul">
   	<li class="tabli" id="navHome">Home</li>
   <!--	<li class="tabli cstruction" id="navHome">Blog</li> -->
@@ -81,8 +82,10 @@
 </div>
 </div>
 
-<div id="footer">
 </div>
+
+<footer id="footer">
+</footer>
 
 </template>
 

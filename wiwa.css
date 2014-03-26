@@ -16,6 +16,13 @@ body{
 	/*background-color:#d2d2d2; 
 	background-image:url(./bg2.jpg);
 	background-color:#e0e0e0;*/
+	background-image:url(./bg4.png);
+	background-attachment:fixed;
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	background-color:rgb(237,237,237);
 	color:white;
 	width:100%;
@@ -33,9 +40,6 @@ label:hover{cursor:pointer}
 	border-width:1px;
 	border-color:blue;
 }*/
-#columnMain{
-	width:100%;
-}
 
 #header{
 	background-color:black;
@@ -112,7 +116,6 @@ label:hover{cursor:pointer}
 	min-width:1200px;
 	height:140px;
 	float:left;
-	position:relative;
 background:
 radial-gradient(black 15%, transparent 16%) 0 0,
 radial-gradient(black 15%, transparent 16%) 4px 4px,
@@ -120,7 +123,16 @@ radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
 radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 4px 4.5px;
 background-color:#282828;
 background-size:8px 8px;
-	top:0px;
+	position:relative;
+	top:0;
+	z-index:-1;
+	/*position: fixed;
+	top:100%;
+	margin-top:-140px;
+	right: 0;
+	left: 0;
+	z-index: 1;*/
+
 }
 #footerElements{
 	font-size:1em;
@@ -130,6 +142,15 @@ background-size:8px 8px;
 	float:left;
 	position:relative;
 	top:130px;
+	
+/*
+	position:fixed;
+	top:100%;
+	margin-top:-140px;
+	right: 0;
+	left: 0;
+	z-index: 2;
+*/
 }
 #footerElements .tabul{
 	font-size:1.4em;
@@ -185,8 +206,8 @@ background-size:8px 8px;
 	float:right;
 	margin-left:20px;
 	/*background-color: rgba(252,252,252,.64);*/
-	background-color: rgba(225,225,225,.64);
-	border-radius: 5px 5px 5px 5px;
+	background-color: rgba(225,225,225,.75);
+	border-radius: 6px 6px 6px 6px;
 	box-shadow: inset 0px 0px 1px 1px #bfbfbf;
 }
 
@@ -236,6 +257,7 @@ background-size:8px 8px;
 }
 
 #projects{
+	color: white;
 	font-size:4.2em;
 	margin-bottom:-15px;
 }
@@ -244,7 +266,7 @@ background-size:8px 8px;
 	margin-bottom:32px;
 	height: 5px;
 	border: 0;
-	box-shadow: inset 0 6px 6px -6px black;
+	box-shadow: inset 0 6px 6px -6px white;
 }
 
 .projectDiv{
@@ -255,7 +277,7 @@ background-size:8px 8px;
 	padding:20px;
 	margin:20px;
 	
-	background-color: rgba(225,225,225,.64);
+	background-color: rgba(225,225,225,.75);
 	border-radius: 5px 5px 5px 5px;
 	box-shadow: inset 0px 0px 1px 1px #bfbfbf;
 }

@@ -82,8 +82,8 @@ function styleHome(){
 	var d = $($('#divIntro p')[3]);
 	
 	a.css({"font-size":"3.6em", "margin-top":"36px"});
-	b.css({"font-size":"1.5em"});
-	c.css({"font-size":"1.5em"});
+	b.css({"font-size":"1.7em"});
+	c.css({"font-size":"1.7em"});
 	d.css({"font-size":"2.7em"});
 
 }
