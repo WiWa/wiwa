@@ -18,7 +18,8 @@ body{
 	background-image:url(./bg2.jpg);
 	background-color:#e0e0e0;*/
 
-	background:url(./bg4.png) no-repeat center center fixed; 
+	background-image:url(./bg4.png); 
+	background-repeat:no-repeat;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
