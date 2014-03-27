@@ -21,7 +21,7 @@
 
 
 <template name="viewMain">
-<img src="./bg4.png"/>
+<img class="bg" src="./bg4.png"/>
 <div id="header">
 </div>
 
@@ -38,6 +38,11 @@
     <a href="https://www.linkedin.com/pub/win-wang/68/504/212" class="cona" target="_blank">
 	<p id="liic" class="iconp el-icon-linkedin" style="color:#1683BB;"/>
 	<label for="liic">LinkedIn</label>
+    </a>
+
+    <a href="https://twitter.com/Winium" class="cona" target="_blank">
+	<p id="twic" class="iconp el-icon-twitter" style="color:#41e9fc;"/>
+	<label for="twic">Twitter</label>
     </a>
 
     <a href="https://www.github.com/WiWa" class="cona" target="_blank">
