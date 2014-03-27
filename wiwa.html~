@@ -21,6 +21,7 @@
 
 
 <template name="viewMain">
+<img src="./bg4.png"/>
 <div id="header">
 </div>
 
