@@ -36,8 +36,8 @@ if (Meteor.isClient) {
 	normalHome();
     },
 //////// Probably want copy-paste
-    'click #embtn' : function (){
-
+    'click #emic' : function (){
+	alert("wang.win0@gmail.com");
     },
 
   });
@@ -119,7 +119,7 @@ function bindHandlers(){
 	$(".gh").hover(function(){$("#ghlbl").stop(true).animate({"opacity":"1"},150)},function(){$("#ghlbl").stop(true).animate({"opacity":".64"},150)});
 
 	$(".em").hover(function(){$("#emlbl").stop(true).animate({"opacity":"1"},150)},function(){$("#emlbl").stop(true).animate({"opacity":".64"},150)});*/
-	$(".fade").hover(function(){$("#"+$(this).attr('class').substr(5,7)+"lbl").stop(true).animate({"opacity":"1"},150)},function(){ $("#"+$(this).attr('class')+"lbl").stop(true).animate({"opacity":".64"},150)});
+	$(".fade").hover(function(){$("#"+$(this).attr('class').substr(5,7)+"lbl").stop(true).animate({"opacity":"1"},150)},function(){ $("#"+$(this).attr('class').substr(5,7)+"lbl").stop(true).animate({"opacity":".64"},150)});
 
 }
 

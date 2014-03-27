@@ -33,26 +33,26 @@
 </div>
 
 <div id="divCon">
-<div style="margin-bottom:160px" />
-<span>
-    <a href="https://www.linkedin.com/pub/win-wang/68/504/212" class="" id="" target="_blank">
-	<p class="iconp el-icon-linkedin" style="color:#1683BB;"/>
+
+    <a href="https://www.linkedin.com/pub/win-wang/68/504/212" class="cona" target="_blank">
+	<p id="liic" class="iconp el-icon-linkedin" style="color:#1683BB;"/>
+	<label for="liic">LinkedIn</label>
     </a>
-</span>
-<span>
-    <a href="https://www.github.com/WiWa" class="" id="" target="_blank">
-	<p class="iconp el-icon-github"/>
+
+    <a href="https://www.github.com/WiWa" class="cona" target="_blank">
+	<p id="ghic" class="iconp el-icon-github"style="color:#d2d2d2;"/>
+	<label for="ghic">GitHub</label>
     </a>
-</span>
-<span>
-    <a href="./wiwaResume.pdf" class="" id="" target="_blank">
-	<p class="iconp el-icon-list" style="color:skyblue;"/>
+
+    <a href="./wiwaResume.pdf" class="cona" target="_blank">
+	<p id="reic" class="iconp el-icon-list" style="color:#3e01c1;"/>
+	<label for="reic">Résumé</label>
     </a>
-</span>
-<span>
-    <span class="" id="" target="_blank">
-	<p class="iconp el-icon-envelope" style="color:orange;"/>
-    </span>
+
+    <a href="mailto:wang.win0@gmail.com" class="cona">
+	<p id="emic" class="iconp el-icon-envelope" style="color:#f9ad13;"/>
+	<label for="emic">wang.win0@gmail.com</label>
+    </a>
 </span>
 
 </div>
@@ -76,53 +76,14 @@
   </div>
 </div>
 
-<div id="footerElements">
-  <ul  class="tabul">
-
-  <li class="tabli">
-    <a href="https://www.linkedin.com/pub/win-wang/68/504/212" class="fade li" id="libtn" target="_blank">
-	<img src="./linkedinicon.png" name="libtn"  class="btnicon"/>
-	<label for="libtn" id="lilbl">LinkedIn</label>
-    </a>
-  </li>
-
-  <li class="tabli">
-    <a href="https://www.github.com/WiWa" class="fade gh"  id="ghbtn" target="_blank">
-	<img src="./githubicon.png" name="ghbtn" class="btnicon"/>
-	<label for="ghbtn" id="ghlbl">GitHub</label>
-    </a>
-  </li>
-
-  <!-- <li class="tabli" id="wiwa">W i W a</li> -->
-
-  <li class="tabli">
-    <a href="./wiwaResume.pdf" class="fade re" id="rebtn" target="_blank">
-	<img src="./resumeicon.png" name="rebtn" class="btnicon"/>
-	<label for="rebtn" id="relbl">Résumé</label>
-    </a>
-  </li>
-
-  <li class="tabli">
-    <span class="fade em" id="embtn">
-	<img src="./emailicon.png" name="embtn" class="btnicon curs"/>
-	<label for="embtn" id="emlbl">wang.win0@gmail.com</label>
-    </span>
-  </li>
-
-  </ul>
 </div>
-</div>
-
-</div>
-
-<div id="footer">
 </div>
 
 </template>
 
 <template name="viewHome">
 <div id="divImgs">
-<img id="picme"src="/wiwa1.jpg" style="margin-top:-20px"></img>
+<img id="picme"src="/wiwa1.jpg" style="margin-top:-20px;"></img>
 
 </div>
 
@@ -130,8 +91,8 @@
 <div id="divText">
   <p class='hey'>Hey there, I'm Win</p>
   <p class="tre">CS & Physics student and Software Developer</p>
-  <p class="tre">I'm fascinated with the tech world and the future it promises</p>
-  <p class="tre">See you on the way there!</p>
+  <p class="tre">I'm fascinated with the tech world <br/>and the future technology promises</p>
+  <p class="tre">See you on the way!</p>
 <label id="ablbl">More About Me</label>
 
 <div id="divMore" style="display:none">

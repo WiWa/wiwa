@@ -35,10 +35,6 @@ if (Meteor.isClient) {
     'click #ablbl' : function (){
 	normalHome();
     },
-//////// Probably want copy-paste
-    'click #embtn' : function (){
-
-    },
 
   });
 
