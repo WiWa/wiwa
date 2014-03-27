@@ -35,12 +35,9 @@ if (Meteor.isClient) {
     'click #ablbl' : function (){
 	normalHome();
     },
-//////// Show Email
+//////// Probably want copy-paste
     'click #embtn' : function (){
-	if(typeof(emailShown)=='undefined'){
-		$("#emlbl").text("wang.win0@gmail.com");
-		emailShown = true;
-	}
+
     },
 
   });
@@ -122,7 +119,7 @@ function bindHandlers(){
 	$(".gh").hover(function(){$("#ghlbl").stop(true).animate({"opacity":"1"},150)},function(){$("#ghlbl").stop(true).animate({"opacity":".64"},150)});
 
 	$(".em").hover(function(){$("#emlbl").stop(true).animate({"opacity":"1"},150)},function(){$("#emlbl").stop(true).animate({"opacity":".64"},150)});*/
-	$(".tabli a").hover(function(){ $("#"+$(this).attr('class')+"lbl").stop(true).animate({"opacity":"1"},150)},function(){ $("#"+$(this).attr('class')+"lbl").stop(true).animate({"opacity":".64"},150)});
+	$(".fade").hover(function(){$("#"+$(this).attr('class').substr(5,7)+"lbl").stop(true).animate({"opacity":"1"},150)},function(){ $("#"+$(this).attr('class').substr(5,7)+"lbl").stop(true).animate({"opacity":".64"},150)});
 
 }
 

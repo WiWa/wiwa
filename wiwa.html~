@@ -30,14 +30,30 @@
 <div id="divWin"class="tre">
 <h1 id="winhead">win wang</h1>
 <p>Software Developer</p>
-<p id="contactme">Contact Me</p>
+</div>
 
-<ul class="contactsMenu">
-<li><a href="default.asp">Home</a></li>
-<li><a href="news.asp">News</a></li>
-<li><a href="contact.asp">Contact</a></li>
-<li><a href="about.asp">About</a></li>
-</ul>
+<div id="divCon">
+<div style="margin-bottom:160px" />
+<span>
+    <a href="https://www.linkedin.com/pub/win-wang/68/504/212" class="" id="" target="_blank">
+	<p class="iconp el-icon-linkedin" style="color:#1683BB;"/>
+    </a>
+</span>
+<span>
+    <a href="https://www.github.com/WiWa" class="" id="" target="_blank">
+	<p class="iconp el-icon-github"/>
+    </a>
+</span>
+<span>
+    <a href="./wiwaResume.docx" class="" id="" target="_blank">
+	<p class="iconp el-icon-list" style="color:skyblue;"/>
+    </a>
+</span>
+<span>
+    <span class="" id="" target="_blank">
+	<p class="iconp el-icon-envelope" style="color:orange;"/>
+    </span>
+</span>
 
 </div>
 
@@ -64,14 +80,14 @@
   <ul  class="tabul">
 
   <li class="tabli">
-    <a href="https://www.linkedin.com/pub/win-wang/68/504/212" class="li" id="libtn">
+    <a href="https://www.linkedin.com/pub/win-wang/68/504/212" class="fade li" id="libtn" target="_blank">
 	<img src="./linkedinicon.png" name="libtn"  class="btnicon"/>
 	<label for="libtn" id="lilbl">LinkedIn</label>
     </a>
   </li>
 
   <li class="tabli">
-    <a href="https://www.github.com/WiWa" class="gh"  id="ghbtn">
+    <a href="https://www.github.com/WiWa" class="fade gh"  id="ghbtn" target="_blank">
 	<img src="./githubicon.png" name="ghbtn" class="btnicon"/>
 	<label for="ghbtn" id="ghlbl">GitHub</label>
     </a>
@@ -80,17 +96,17 @@
   <!-- <li class="tabli" id="wiwa">W i W a</li> -->
 
   <li class="tabli">
-    <a href="#" class="em" id="embtn">
-	<img src="./emailicon.png" name="embtn" class="btnicon"/>
-	<label for="embtn" id="emlbl">Email</label>
+    <a href="./wiwaResume.pdf" class="fade re" id="rebtn" target="_blank">
+	<img src="./resumeicon.png" name="rebtn" class="btnicon"/>
+	<label for="rebtn" id="relbl">Résumé</label>
     </a>
   </li>
 
   <li class="tabli">
-    <a href="./wiwaResume.pdf" class="re" id="rebtn">
-	<img src="./resumeicon.png" name="rebtn" class="btnicon"/>
-	<label for="rebtn" id="relbl">Résumé</label>
-    </a>
+    <span class="fade em" id="embtn">
+	<img src="./emailicon.png" name="embtn" class="btnicon curs"/>
+	<label for="embtn" id="emlbl">wang.win0@gmail.com</label>
+    </span>
   </li>
 
   </ul>
