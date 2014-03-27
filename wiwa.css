@@ -87,8 +87,11 @@ label:hover{cursor:pointer}
 }
 
 .cona label{
-	color:white;
-	margin-left:-30px;
+	color:rgba(245,245,245,.75);
+	margin-left:-32px;
+}
+.cona:hover label{
+	color:rgba(255,255,255,1);
 }
 .iconp{
 	font-size:40px;
