@@ -41,7 +41,7 @@
     </a>
 
     <a href="https://twitter.com/Winium" class="cona" target="_blank">
-	<p id="twic" class="iconp el-icon-twitter" style="color:#41e9fc;"/>
+	<p id="twic" class="iconp el-icon-twitter" style="color:#1DCAFF;"/>
 	<label for="twic">Twitter</label>
     </a>
 
