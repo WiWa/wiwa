@@ -91,7 +91,7 @@ function normalHome(){
 	var nw = $("#divIntro").width()-32;
 
 	
-	$("#divIntro").animate({"padding":"16px", "width":nw+"px", "height":"450px"},300);
+	$("#divIntro").animate({"padding":"16px", "padding-top":"10px", "width":nw+"px", "height":"450px"},300);
 	$('#divText').animate({"padding":"0"},300);
 	
 	a.animate({"color":"black","font-size":"2.6em", "margin-left":"0"},300);

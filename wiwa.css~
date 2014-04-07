@@ -14,7 +14,7 @@ html{
 }
 body{
 	font-family: "Open Sans", Calibri , sans-serif;
-	font-weight: 100;
+	font-weight: 200;
 	/*background-color:#d2d2d2; 
 	background-image:url(./bg2.jpg);
 	background-color:#e0e0e0;*/
@@ -50,6 +50,7 @@ img.bg {
   img.bg {
     left: 50%;
     margin-left: -960px;
+    min-height: 1080px; 
   }
 }
 
@@ -204,6 +205,9 @@ label:hover{cursor:pointer}
 #divIntro p{
 	margin-top:16px;
 	margin-bottom:16px;
+}
+#divMore {
+	margin-top:20px;
 }
 
 .hey{
