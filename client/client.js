@@ -36,6 +36,7 @@ if (Meteor.isClient) {
 	normalHome();
     },
 
+
   });
 
 ////Tab functionality
@@ -116,6 +117,19 @@ function bindHandlers(){
 
 	$(".em").hover(function(){$("#emlbl").stop(true).animate({"opacity":"1"},150)},function(){$("#emlbl").stop(true).animate({"opacity":".64"},150)});*/
 	$(".fade").hover(function(){$("#"+$(this).attr('class').substr(5,7)+"lbl").stop(true).animate({"opacity":"1"},150)},function(){ $("#"+$(this).attr('class').substr(5,7)+"lbl").stop(true).animate({"opacity":".64"},150)});
+
+
+//////// Move Table Rows on Click of Arrows
+    $(".uparrow").click(function(){
+    	row = $(this).closest('tr')[0];
+    	prev = $(row).prev();
+    	$(row).insertBefore(prev);
+    });
+    $(".downarrow").click(function(){
+    	row = $(this).closest('tr')[0];
+    	next = $(row).next();
+    	$(row).insertAfter(next);
+    });
 
 }
 
